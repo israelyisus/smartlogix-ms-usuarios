@@ -1,0 +1,18 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: ms-usuarios
+  datasource:
+    url: jdbc:postgresql://localhost:5435/usuarios_db
+    username: smartlogix
+    password: smartlogix123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+jwt:
+  secret: smartlogix-secret-key-2024-muy-segura-debe-ser-larga
+  expiration: 86400000
